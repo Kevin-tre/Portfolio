@@ -20,7 +20,7 @@ const ProjectCard = ({ project, onClick }) => {
         height: "100%",
         width: "80%",
         bgcolor: darkMode ? "#333" : "#fff", // Fond sombre pour le dark mode
-        color: darkMode ? "#fff" : "#000", // Couleur du texte adaptée
+        color: darkMode ? "#fff" : "#000",
 
         "&:hover": {
           transform: "scale(1.1)",
@@ -41,7 +41,7 @@ const ProjectCard = ({ project, onClick }) => {
           variant="h5"
           component="div"
           sx={{
-            color: darkMode ? "#e0e0e0" : "#333", // Titre adapté au mode
+            color: darkMode ? "#e0e0e0" : "#333",
           }}
         >
           {project.title}
@@ -50,15 +50,12 @@ const ProjectCard = ({ project, onClick }) => {
           variant="body2"
           color="text.secondary"
           sx={{
-            color: darkMode ? "#e0e0e0" : "#333", // Titre adapté au mode
+            color: darkMode ? "#e0e0e0" : "#333",
           }}
         >
           {project.description}
         </Typography>
       </CardContent>
-      <CardActions>
-        {/* Ajoutez des boutons ou des tags ici si nécessaire */}
-      </CardActions>
     </Card>
   );
 };

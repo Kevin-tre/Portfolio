@@ -14,5 +14,4 @@ const DarkModeProvider = (props) => {
   );
 };
 
-// Exporter DarkModeContext et DarkModeProvider individuellement
 export { DarkModeContext, DarkModeProvider };
