@@ -5,75 +5,68 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
+import SchoolIcon from "@mui/icons-material/School";
+import ComputerIcon from "@mui/icons-material/Computer";
+import CodeIcon from "@mui/icons-material/Code";
 
 const Formation = () => (
   <Timeline position="alternate">
     <TimelineItem>
       <TimelineSeparator>
-        <TimelineDot color="primary" />
+        <TimelineDot color="primary">
+          <CodeIcon />
+        </TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent>
-        <h3>Master 2 - Spécialité MBDS</h3>
-        <p>2022 - 2023 | Sophia-Antipolis, France</p>
-        <p>Parcours mobilité, big data et intégration de systèmes</p>
-      </TimelineContent>
-    </TimelineItem>
-
-    <TimelineItem>
-      <TimelineSeparator>
-        <TimelineDot color="secondary" />
-        <TimelineConnector />
-      </TimelineSeparator>
-      <TimelineContent>
-        <h3>Licence - Informatique</h3>
-        <p>2019 - 2022 | Université de Nice, France</p>
+        <h3>Formation Intégrateur Web</h3>
+        <p>2024 | OpenClassrooms, France</p>
         <p>
-          Formation en développement logiciel, systèmes d'information et
-          algorithmique.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+          quae!
         </p>
       </TimelineContent>
     </TimelineItem>
 
     <TimelineItem>
       <TimelineSeparator>
-        <TimelineDot color="primary" />
+        <TimelineDot color="secondary">
+          <ComputerIcon />
+        </TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent>
-        <h3>Baccalauréat Scientifique</h3>
-        <p>2016 - 2019 | Lycée de Nice, France</p>
-        <p>Spécialisation en mathématiques et sciences de l'ingénieur.</p>
+        <h3>POEC Front end</h3>
+        <p>2023 | Distanciel, Human Booster, France</p>
+        <p>Lorem ipsum dolor sit amet.</p>
       </TimelineContent>
     </TimelineItem>
 
     <TimelineItem>
       <TimelineSeparator>
-        <TimelineDot color="secondary" />
+        <TimelineDot color="success">
+          <SchoolIcon />
+        </TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent>
-        <h3>Stage en développement web</h3>
-        <p>Été 2021 | Société XYZ, Nice, France</p>
-        <p>
-          Conception et développement d'une application web pour la gestion de
-          projet.
-        </p>
+        <h3>BTS NRC</h3>
+        <p>2017 | Vichy, France</p>
+        <p>Cité Scolaire Albert Londre</p>
       </TimelineContent>
     </TimelineItem>
 
     <TimelineItem>
       <TimelineSeparator>
-        <TimelineDot color="primary" />
+        <TimelineDot color="secondary">
+          <SchoolIcon />
+        </TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent>
-        <h3>Projets personnels</h3>
-        <p>2018 - Présent | Projets divers</p>
-        <p>
-          Développement de plusieurs applications web et mobiles, incluant des
-          jeux et des outils utilitaires.
-        </p>
+        <h3>Bac ES</h3>
+        <p>2015 | Vichy, France</p>
+        <p>Cité Scolaire Albert Londre</p>
       </TimelineContent>
     </TimelineItem>
   </Timeline>

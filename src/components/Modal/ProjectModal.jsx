@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 
-const ProjectModal = ({ title, description, tags, isOpen, onClose }) => {
+const ProjectModal = ({ title, description, isOpen, onClose }) => {
   return (
     <Dialog
       open={isOpen}
@@ -18,24 +18,13 @@ const ProjectModal = ({ title, description, tags, isOpen, onClose }) => {
       fullWidth
       maxWidth="sm"
     >
-      <DialogTitle id="project-dialog-title">{title}</DialogTitle>
+      <DialogTitle id="project-dialog-title" component="h3">
+        {title}
+      </DialogTitle>
       <DialogContent>
         <Typography id="project-dialog-description" variant="body1" paragraph>
           {description}
         </Typography>
-        {tags.map((tag, index) => (
-          <span
-            key={index}
-            style={{
-              marginRight: "8px",
-              background: "#f0f0f0",
-              padding: "4px 8px",
-              borderRadius: "4px",
-            }}
-          >
-            {tag}
-          </span>
-        ))}
       </DialogContent>
       <DialogActions>
         <Button onClick={onClose}>Close</Button>

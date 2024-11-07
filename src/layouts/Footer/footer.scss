@@ -1,0 +1,15 @@
+.footer-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    background-color: #000000;
+    height: 80px;
+}
+
+.socials {
+    display: flex;
+    padding-right: 33px;
+    gap:28px ;
+    color: white;
+}

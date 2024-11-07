@@ -1,0 +1,31 @@
+.tag {
+    margin-right: 8px;
+    padding: 4px 8px;
+    
+  
+    &.react {
+      background-color: #61dafb;
+    }
+  
+    &.javascript {
+      background-color: #f7df1e;
+      color: #000; // Contraste avec le fond jaune
+    }
+  
+    &.html {
+      background-color: #e34f26;
+    }
+  
+    &.css {
+      background-color: #1572b6;
+    }
+  
+    &.node {
+      background-color: #3c873a;
+    }
+  
+    &.sass {
+      background-color: #cf649a;
+    }
+  
+  }
