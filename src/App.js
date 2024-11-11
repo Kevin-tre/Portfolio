@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./App.scss";
 import Layout from "./layouts/Layout";
 import {
@@ -17,8 +17,12 @@ function App() {
 const MainApp = () => {
   const { darkMode } = useContext(DarkModeContext);
 
+  useEffect(() => {
+    document.body.classList.toggle("dark-mode", darkMode);
+  }, [darkMode]);
+
   return (
-    <div className={darkMode ? "dark-mode" : ""}>
+    <div className="main-container">
       <Layout />
     </div>
   );

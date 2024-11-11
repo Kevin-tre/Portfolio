@@ -5,6 +5,10 @@
     gap: 10px;
     background-color: #000000;
     height: 80px;
+
+    @media (max-width: 570px) {
+        height: 50px;
+      }
 }
 
 .socials {

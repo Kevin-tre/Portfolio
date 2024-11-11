@@ -1,7 +1,8 @@
+// Import des fichiers de variables et mixins
 @import './styles/variable';
 @import './styles/mixin';
 
-// General
+// Global Styles
 body {
   margin: 0;
   display: flex;
@@ -10,12 +11,26 @@ body {
   min-height: 100vh;
   font-family: $main-font;
 
-  @media (max-width: 480px) {
+  @media (max-width: 570px) {
     padding: 10px;
   }
 }
 
-// Page Home
+// Mode sombre global
+body.dark-mode {
+  background-color: #1A1A1A; 
+}
+
+// Main container
+.main-container {
+  background-color: inherit; // Hérite de la couleur de fond du body
+
+  @media (max-width: 570px) {
+    padding: 10px;
+  }
+}
+
+// ----- Page Home -----
 .card-container,
 .formation-container,
 .contact {
@@ -28,33 +43,34 @@ h2 {
 
 .dark-mode h2 {
   color: #d7b986;
+  position: relative;
+
   &::after {
     content: "";
     display: block;
     width: 80%;
-    height: 3px; 
-    background-color: #d7b986; 
+    height: 3px;
+    background-color: #d7b986;
     position: absolute;
     bottom: 0;
   }
 }
 
-// Header
+// ----- Header -----
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px 20px;
-  position: relative; 
+  position: relative;
 
   @media (max-width: 570px) {
-   
-      flex-direction: column;
-      padding: 10px;
-    
+    flex-direction: column;
+    padding: 10px;
   }
 }
 
+// ----- Navigation -----
 .nav-links {
   display: flex;
   flex-direction: row;
@@ -85,7 +101,7 @@ h2 {
     list-style: none;
 
     @media (max-width: 570px) {
-      display: block; 
+      display: block;
     }
 
     a {
@@ -98,7 +114,7 @@ h2 {
       cursor: pointer;
 
       @media (max-width: 768px) {
-        font-size: 17px;;
+        font-size: 17px;
       }
 
       @media (max-width: 570px) {
@@ -107,79 +123,77 @@ h2 {
         font-size: 13px;
       }
 
-    }
+      &::before,
+      &::after {
+        content: '';
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        transition: all .35s ease;
+        opacity: 0;
+      }
 
-    a::before,
-    a::after {
-      content: '';
-      height: 14px;
-      width: 14px;
-      position: absolute;
-      transition: all .35s ease;
-      opacity: 0;
-    }
+      &::before {
+        right: 0;
+        top: 0;
+        border-top: 3px solid #0148b3;
+        border-right: 3px solid #012268;
+        transform: translate(-100%, 50%);
+      }
 
-    a::before {
-      right: 0;
-      top: 0;
-      border-top: 3px solid #0148b3;
-      border-right: 3px solid #012268;
-      transform: translate(-100%, 50%);
-    }
+      &::after {
+        left: 0;
+        bottom: 0;
+        border-bottom: 3px solid #0148b3;
+        border-left: 3px solid #012268;
+        transform: translate(100%, -50%);
+      }
 
-    a::after {
-      left: 0;
-      bottom: 0;
-      border-bottom: 3px solid #0148b3;
-      border-left: 3px solid #012268;
-      transform: translate(100%, -50%);
-    }
+      &:hover {
+        color: #040e70;
+      }
 
-    a:hover {
-      color: #040e70;
-    }
-
-    a:hover::before,
-    a:hover::after {
-      transform: translate(0, 0);
-      opacity: 1;
+      &:hover::before,
+      &:hover::after {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
     }
   }
 }
 
+// Logo
 .logo {
   max-width: 100%;
   width: 95px;
+
   @media (max-width: 570px) {
     margin-bottom: 15px;
-    width: 80px; 
+    width: 80px;
   }
 }
 
-// Afffichage menu mobile
+// ----- Mobile Menu -----
 .menu-toggle {
   display: none;
-  
-  
+
   @media (max-width: 570px) {
     display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
-  gap: 5px; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 5px;
   }
 }
 
-
-
-// Mode sombre
+// ----- Mode Sombre -----
 .dark-mode {
   background-color: #1A1A1A;
 
   nav {
     li {
-      & a {
-        color:#F0F0F0;;
+      a {
+        color: #F0F0F0;
       }
 
       a::before,
@@ -217,16 +231,16 @@ h2 {
         transform: translate(0, 0);
         opacity: 1;
       }
-      
     }
   }
 
   .nav-links.open {
-    background-color: #1A1A1A; 
+    background-color: #1A1A1A;
 
     & a {
       color: #F0F0F0;
     }
   }
 }
+
 
