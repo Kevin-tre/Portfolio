@@ -1,5 +1,5 @@
-import "./App.css";
 import React, { useContext } from "react";
+import "./App.scss";
 import Layout from "./layouts/Layout";
 import {
   DarkModeProvider,
@@ -18,7 +18,7 @@ const MainApp = () => {
   const { darkMode } = useContext(DarkModeContext);
 
   return (
-    <div className={darkMode ? "dark-mode" : "light-mode"}>
+    <div className={darkMode ? "dark-mode" : ""}>
       <Layout />
     </div>
   );

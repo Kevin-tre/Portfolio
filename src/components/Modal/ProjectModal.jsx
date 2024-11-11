@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Dialog,
   DialogTitle,
@@ -7,8 +7,11 @@ import {
   Button,
   Typography,
 } from "@mui/material";
+import { DarkModeContext } from "../../context/DarkModeContext";
 
-const ProjectModal = ({ title, description, isOpen, onClose }) => {
+const ProjectModal = ({ title, description, GitHubRepo, isOpen, onClose }) => {
+  const { darkMode } = useContext(DarkModeContext);
+
   return (
     <Dialog
       open={isOpen}
@@ -17,6 +20,13 @@ const ProjectModal = ({ title, description, isOpen, onClose }) => {
       aria-describedby="project-dialog-description"
       fullWidth
       maxWidth="sm"
+      sx={{
+        "& .MuiDialog-paper": {
+          backgroundColor: darkMode ? "#8d8982" : "#ffffff",
+          color: darkMode ? "#fdf6f0" : "black",
+          textAlign: "justify",
+        },
+      }}
     >
       <DialogTitle id="project-dialog-title" component="h3">
         {title}
@@ -27,13 +37,23 @@ const ProjectModal = ({ title, description, isOpen, onClose }) => {
         </Typography>
       </DialogContent>
       <DialogActions>
-        <Button onClick={onClose}>Close</Button>
         <Button
-          href="https://kevin-tre.github.io/Projet-7-Kasa/"
-          color="primary"
+          onClick={onClose}
+          sx={{
+            bgcolor: darkMode ? "#63531a" : "#000080",
+            color: darkMode ? "#ffffff" : "#ffffff",
+          }}
+        >
+          Fermer
+        </Button>
+        <Button
+          href={GitHubRepo}
+          sx={{
+            bgcolor: darkMode ? "#63531a" : "#000080",
+          }}
           variant="contained"
         >
-          Github Live
+          Repo GitHub
         </Button>
       </DialogActions>
     </Dialog>

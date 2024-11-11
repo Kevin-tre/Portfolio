@@ -9,23 +9,34 @@
   
     &.javascript {
       background-color: #f7df1e;
-      color: #000; // Contraste avec le fond jaune
     }
   
-    &.html {
+    &.react-router {
       background-color: #e34f26;
     }
   
-    &.css {
+    &.seo {
       background-color: #1572b6;
     }
   
-    &.node {
+    &.apirest {
       background-color: #3c873a;
     }
   
     &.sass {
       background-color: #cf649a;
+    }
+
+    &.redux {
+      background-color: #01462f;
+    }
+    &.referencement{
+      background-color: #024d27;
+    }
+
+    &.dark-mode-tag {
+      background-color: #d7b986; 
+    
     }
   
   }

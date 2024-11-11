@@ -3,6 +3,7 @@ import TypeIt from "typeit-react";
 import "../Message/message.scss";
 
 const Message = () => {
+  const isMobileOrTablet = window.innerWidth <= 768;
   return (
     <div className="background">
       {" "}
@@ -11,7 +12,7 @@ const Message = () => {
           <TypeIt
             className="text"
             options={{
-              speed: 55,
+              speed: 30,
 
               waitUntilVisible: true,
               afterComplete: (instance) => {
@@ -20,14 +21,9 @@ const Message = () => {
               },
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
-            aperiam dolor illum beatae quaerat, perspiciatis at deserunt,
-            obcaecati asperiores doloremque, enim nihil omnis reiciendis?
-            Voluptates sint voluptatum officia ullam quaerat necessitatibus
-            debitis velit voluptas blanditiis accusantium eaque assumenda
-            nesciunt asperiores, aperiam, cumque, sapiente numquam? Delectus
-            quis aut nesciunt non quo eligendi voluptatibus quaerat temporibus
-            aliquid!
+            {isMobileOrTablet
+              ? "En 2023, j’ai choisi de devenir développeur front-end et suivi une formation en tant qu'Intégratuer web qui a permis de renforcer mes compétences dans plusieurs domaines."
+              : "En 2023, j’ai choisi de me reconvertir en tant que développeur front-end. J’ai débuté par une auto-formation en HTML et CSS, puis suivi une POEC de trois mois. Cette expérience a renforcé ma passion pour le domaine et m’a motivé à rejoindre la formation Intégrateur Web d’OpenClassrooms. Grâce à celle-ci, j'ai approfondi et renforcer mes compétences en JavaScript, en optimisation et surtout en création d'interfaces avec React,accompagné de React-Router et de Redux."}
           </TypeIt>
         </h1>
       </div>

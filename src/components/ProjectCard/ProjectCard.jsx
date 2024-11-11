@@ -13,13 +13,20 @@ const ProjectCard = ({ project, onClick }) => {
       sx={{
         cursor: "pointer",
         transition: "transform 0.2s, box-shadow 0.2s",
-        width: "80%", // Largeur fixe pour uniformité
-        height: "320px", // Hauteur fixe pour la card
-        bgcolor: darkMode ? "#333" : "#fff",
+        bgcolor: darkMode ? "#dad7d2" : "#fff",
         color: darkMode ? "#fff" : "#000",
         display: "flex",
         flexDirection: "column",
-
+        width: {
+          xs: "100%",
+          sm: "90%",
+          md: "80%",
+        },
+        height: {
+          xs: "300px",
+          sm: "280px",
+          md: "320px",
+        },
         "&:hover": {
           transform: "scale(1.1)",
           boxShadow: 8,
@@ -32,16 +39,20 @@ const ProjectCard = ({ project, onClick }) => {
         image={project.cover}
         sx={{
           width: "100%",
-          height: "250px", // Hauteur augmentée pour afficher plus de l'image
+          height: {
+            xs: "180px",
+            sm: "220px",
+            md: "250px",
+          },
           objectFit: "cover",
-          objectPosition: "top", // Positionne l'image vers le haut
+          objectPosition: "top",
         }}
       />
       <CardContent className="description-container">
         <Typography
           component="h3"
           sx={{
-            color: darkMode ? "#e0e0e0" : "#333",
+            color: darkMode ? "#000" : "#333",
           }}
         >
           {project.title}

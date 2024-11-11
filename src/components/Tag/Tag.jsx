@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../Tag/tag.scss";
 import { Chip } from "@mui/material";
+import { DarkModeContext } from "../../context/DarkModeContext";
 
 const Tag = ({ tags }) => {
+  const { darkMode } = useContext(DarkModeContext);
   return (
     <div>
       {tags &&
         tags.map((tag, index) => (
           <Chip
-            className={`tag ${tag.toLowerCase()}`} // Convertit le tag en minuscule pour correspondre à la classe CSS
+            className={`tag ${darkMode ? "dark-mode-tag" : tag.toLowerCase()}`}
             key={index}
             label={tag}
           />

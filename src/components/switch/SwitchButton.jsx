@@ -60,14 +60,14 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 }));
 
 const SwitchButton = () => {
-  const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
+  const { toggleDarkMode } = useContext(DarkModeContext);
   const handleClick = () => {
     toggleDarkMode();
   };
 
   return (
     <div className="lightswitch">
-      <MaterialUISwitch sx={{ m: 1 }} defaultChecked onClick={handleClick} />
+      <MaterialUISwitch defaultChecked onClick={handleClick} />
     </div>
   );
 };
