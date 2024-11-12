@@ -16,7 +16,10 @@ const Message = () => {
               waitUntilVisible: true,
               afterComplete: (instance) => {
                 const cursor = instance.element.querySelector(".ti-cursor");
-                if (cursor) cursor.style.display = "none";
+                if (cursor) {
+                  cursor.style.position = "absolute";
+                  cursor.style.visibility = "hidden";
+                }
               },
             }}
           >
