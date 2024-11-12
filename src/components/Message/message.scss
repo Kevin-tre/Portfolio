@@ -12,14 +12,16 @@
   }
   
   .background {
-    background-image: url("https://res.cloudinary.com/dns52ztb6/image/upload/v1730743950/andy-holmes-rCbdp8VCYhQ-unsplash_zkfuff.jpg");
-    background-size: cover;
+    // background-image: url("../../assets/fond-message.webp");
+    background-size: cover; 
     background-position: center;
+    background-repeat: no-repeat; 
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(10px);
-    height: 500px;
+    height: auto;
+    filter: blur(0); /* Éviter un flou non désiré */
+    image-rendering: crisp-edges; /* Assure que l'image reste nette */
   
     @media (max-width: 480px) {
       height: auto; 
@@ -39,6 +41,7 @@
     border: solid 1px rgba(255, 255, 255, 0.3);
     width: 50%;
     max-width: 90%; 
+    min-height: 100px; /* Ajustez selon la hauteur de votre texte */
   
     @media (max-width: 480px) {
       padding: 15px; 

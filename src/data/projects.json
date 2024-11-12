@@ -2,7 +2,7 @@
 	{
 		"id": 1,
 		"title": "Kasa",
-		"cover": "https://res.cloudinary.com/dns52ztb6/image/upload/v1730757511/Capture_hjdan6.png",
+		"cover": "/assets/kasa.webp",
 		"description": "Ce projet vise à créer un front-end dynamique en utilisant React et React Router. L'objectif principal est de proposer une expérience utilisateur fluide avec une navigation réactive entre les différentes pages de l'application. Le projet est initialisé avec Create React App, facilitant une configuration rapide et optimisée de l'environnement de développement.",
 		"GitHubRepo" : "https://github.com/Kevin-tre/Projet-7-Kasa",
 		"tags": [
@@ -14,7 +14,7 @@
 	{
 		"id": 2,
 		"title": "ArgentBank",
-		"cover": "https://res.cloudinary.com/dns52ztb6/image/upload/v1730756276/argent_cwftw2.png",
+		"cover": "/assets/argentbank.webp",
 		"description": "Ce projet vise à créer un front-end dynamique pour une application bancaire en utilisant React et Redux. Le front-end est intégré avec le back-end via des appels API REST pour afficher et gérer les données des utilisateurs. Redux assure une gestion cohérente de l'état global, tandis que Swagger sera utilisé pour documenter les points d'accès de l'API, facilitant la maintenabilité de l'application.",
 		"GitHubRepo" : "https://github.com/Kevin-tre/Projet-10---Argent-Bank",
 		"tags": [
@@ -26,7 +26,7 @@
 	{
 		"id": 3,
 		"title": "Optimisation SEO",
-		"cover": "https://res.cloudinary.com/dns52ztb6/image/upload/v1730756438/nina_gyojnr.png",
+		"cover": "/assets/nina.webp",
 		"description": "Ce projet vise à optimiser le référencement et les performances d’un site web. Le but était  d'identifier les problèmes de chargement et d’accessibilité, et de mettre en place des améliorations pour la vitesse, la structure du code et le SEO. Utilisation des outils comme Lighthouse et Wave pour créer un rapport illustrant les améliorations avant/après afin de montrer l’impact sur le référencement et l'accessibilité.",
 		"GitHubRepo" : "https://github.com/Kevin-tre/Projet-8-ninacarducci",
 		"tags": [

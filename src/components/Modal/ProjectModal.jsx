@@ -48,6 +48,8 @@ const ProjectModal = ({ title, description, GitHubRepo, isOpen, onClose }) => {
         </Button>
         <Button
           href={GitHubRepo}
+          target="_blank"
+          rel="noopener noreferrer"
           sx={{
             bgcolor: darkMode ? "#63531a" : "#000080",
           }}

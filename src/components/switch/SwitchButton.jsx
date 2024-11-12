@@ -68,7 +68,12 @@ const SwitchButton = () => {
 
   return (
     <div className="lightswitch">
-      <MaterialUISwitch checked={darkMode} onClick={handleClick} />
+      <MaterialUISwitch
+        id="dark-mode-switch"
+        checked={darkMode}
+        onClick={handleClick}
+        aria-label="Activer le mode sombre"
+      />
     </div>
   );
 };

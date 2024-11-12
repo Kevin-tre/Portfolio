@@ -35,6 +35,7 @@ const ProjectCard = ({ project, onClick }) => {
     >
       <CardMedia
         component="img"
+        loading="lazy"
         alt={project.title}
         image={project.cover}
         sx={{
