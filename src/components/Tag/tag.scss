@@ -40,3 +40,9 @@
     }
   
   }
+
+  .test {
+    @media (max-width: 1024px) {
+      display: inline-flex !important;
+    }
+  }

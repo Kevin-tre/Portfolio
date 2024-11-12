@@ -12,12 +12,10 @@ const Message = () => {
             className="text"
             options={{
               speed: 40,
-
               waitUntilVisible: true,
               afterComplete: (instance) => {
                 const cursor = instance.element.querySelector(".ti-cursor");
                 if (cursor) {
-                  cursor.style.position = "absolute";
                   cursor.style.visibility = "hidden";
                 }
               },

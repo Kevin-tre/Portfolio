@@ -1,13 +1,19 @@
 
 .description-container{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 
-    @media (max-width: 480px) {
+    @media (max-width: 1024px) {
         flex-direction: column;
         align-items: center;
       }
 
+      @media (max-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+      }
       @media (max-width: 480px) {
         flex-direction: column;
         align-items: center;
@@ -19,4 +25,13 @@
         font-size: 20px;
         text-align: left;
     }
+}
+
+//Padding responsive card 1024px
+.MuiCardContent-root.css-1lt5qva-MuiCardContent-root {
+  padding: 16px;
+
+  @media (max-width: 1024px) {
+    padding: 8px ;
+  }
 }

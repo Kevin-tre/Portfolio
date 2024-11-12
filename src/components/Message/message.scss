@@ -1,9 +1,17 @@
+.ti-cursor {
+  visibility: hidden; 
+  position: relative; 
+  width: 0.5em; 
+}
+
+
 .text {
     display: inline-block;
     font-size: 30px;
     color: white;
     font-weight: bold;
     text-wrap: wrap;
+    text-align: justify;
   
     @media (max-width: 480px) {
       font-size: 20px; 
@@ -12,25 +20,21 @@
   }
   
   .background {
-    background-image: url("../../assets/test3.jpg");
+    background-image: url("../../assets/contact-img.jpg");
     background-size: cover; 
     background-position: center;
-    background-repeat: no-repeat; 
     display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
-    filter: blur(0); /* Éviter un flou non désiré */
-    
-  
+    padding-top: 30px;
+    padding-bottom: 30px;
+    contain: content; 
+
     @media (max-width: 480px) {
       height: auto; 
       padding: 20px; 
     }
-    @media (min-width: 480px) {
-        height: auto; 
-        padding: 20px; 
-      }
   }
   
   .glass {
@@ -40,8 +44,9 @@
     background: rgba(255, 255, 255, 0.2);
     border: solid 1px rgba(255, 255, 255, 0.3);
     width: 50%;
-    max-width: 90%; 
-    min-height: 100px; /* Ajustez selon la hauteur de votre texte */
+    // max-width: 90%; 
+    // min-height: 120px; 
+    // height: auto; 
   
     @media (max-width: 480px) {
       padding: 15px; 

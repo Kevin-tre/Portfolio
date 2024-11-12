@@ -9,6 +9,7 @@ const ProjectCard = ({ project, onClick }) => {
 
   return (
     <Card
+      className="card-general"
       onClick={() => onClick(project)}
       sx={{
         cursor: "pointer",
@@ -25,7 +26,7 @@ const ProjectCard = ({ project, onClick }) => {
         height: {
           xs: "300px",
           sm: "280px",
-          md: "320px",
+          md: "340px",
         },
         "&:hover": {
           transform: "scale(1.1)",

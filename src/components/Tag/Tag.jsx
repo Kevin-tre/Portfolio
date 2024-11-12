@@ -10,7 +10,9 @@ const Tag = ({ tags }) => {
       {tags &&
         tags.map((tag, index) => (
           <Chip
-            className={`tag ${darkMode ? "dark-mode-tag" : tag.toLowerCase()}`}
+            className={`tag ${
+              darkMode ? "dark-mode-tag" : tag.toLowerCase()
+            } test`}
             key={index}
             label={tag}
           />
