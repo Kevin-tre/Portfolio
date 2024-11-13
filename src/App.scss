@@ -16,14 +16,9 @@ body {
   }
 }
 
-// Mode sombre global
-body.dark-mode {
-  background-color: #1A1A1A; 
-}
-
 // Main container
 .main-container {
-  background-color: inherit; // Hérite de la couleur de fond du body
+  background-color: inherit; 
 
   @media (max-width: 570px) {
     padding: 10px;
@@ -70,7 +65,7 @@ h2 {
   }
 }
 
-// ----- Navigation -----
+// Navigation 
 .nav-links {
   display: flex;
   flex-direction: row;
@@ -120,7 +115,7 @@ h2 {
       @media (max-width: 570px) {
         display: block; 
         width: 100%;
-        font-size: 13px;
+        font-size: 12px;
       }
 
       &::before,
@@ -173,16 +168,26 @@ h2 {
   }
 }
 
-// ----- Mobile Menu -----
+// Mobile Menu 
 .menu-toggle {
   display: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 
   @media (max-width: 570px) {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center; 
-    gap: 5px;
+    align-items: center;
+  }
+
+  .icon {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    font-size: 40px;
+  }
+
+  &.open .icon {
+    opacity: 0; 
   }
 }
 

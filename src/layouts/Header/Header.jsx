@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
-import "./header.scss";
 import LogoLight from "../../assets/logo.webp";
 import LogoDark from "../../assets/logoDark.webp";
 import SwitchButton from "../../components/switch/SwitchButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import { DarkModeContext } from "../../context/DarkModeContext";
 import { Link } from "react-scroll";
 
@@ -20,7 +20,11 @@ const Header = () => {
       <img className="logo" src={darkMode ? LogoDark : LogoLight} alt="Logo" />
 
       <button className="menu-toggle" onClick={toggleMenu}>
-        <MenuIcon />
+        {menuOpen ? (
+          <CloseIcon fontSize="large" />
+        ) : (
+          <MenuIcon fontSize="large" />
+        )}
       </button>
 
       <nav>
