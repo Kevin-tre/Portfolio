@@ -21,9 +21,21 @@ const Header = () => {
 
       <button className="menu-toggle" onClick={toggleMenu}>
         {menuOpen ? (
-          <CloseIcon fontSize="large" />
+          <CloseIcon
+            fontSize="large"
+            sx={{
+              color: darkMode ? "#1A1A1A" : "", // Blanc en dark mode, gris sinon
+              bgcolor: darkMode ? "#d7b986" : "",
+            }}
+          />
         ) : (
-          <MenuIcon fontSize="large" />
+          <MenuIcon
+            fontSize="large"
+            sx={{
+              color: darkMode ? "#1A1A1A" : "", // Blanc en dark mode, gris sinon
+              bgcolor: darkMode ? "#d7b986" : "",
+            }}
+          />
         )}
       </button>
 
