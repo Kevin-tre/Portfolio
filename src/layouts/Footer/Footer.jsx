@@ -12,6 +12,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/k%C3%A9vin-trepied-developpeur-web/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Voir le profil LinkedIn de Kevin"
           >
             <LinkedInIcon
               sx={{
@@ -28,6 +29,7 @@ const Footer = () => {
             href="https://github.com/Kevin-tre"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Voir le profil GitHub de Kevin"
           >
             <GitHubIcon
               sx={{

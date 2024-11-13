@@ -68,7 +68,7 @@ const ContactForm = () => {
       }}
     >
       <Typography
-        variant="h5"
+        variant="h3"
         align="center"
         gutterBottom
         sx={{

@@ -68,11 +68,22 @@ const SwitchButton = () => {
 
   return (
     <div className="lightswitch">
+      <label
+        htmlFor="dark-mode-switch"
+        aria-label={
+          darkMode ? "Désactiver le mode sombre" : "Activer le mode sombre"
+        }
+      />
+
       <MaterialUISwitch
         id="dark-mode-switch"
         checked={darkMode}
         onClick={handleClick}
-        aria-label="Activer le mode sombre"
+        role="switch" // Assurez-vous que le rôle "switch" est défini
+        aria-checked={darkMode} // Correspond à l'état du switch (true/false)
+        aria-label={
+          darkMode ? "Désactiver le mode sombre" : "Activer le mode sombre"
+        } // Fournir une description utile
       />
     </div>
   );
