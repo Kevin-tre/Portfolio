@@ -30,7 +30,7 @@ const Home = () => {
         <Grid2
           container
           rowSpacing={1}
-          direction={{ xs: "column", md: "row" }} // xs (mobile) : colonne /md (tablette,desktop) en ligne
+          direction={{ xs: "column", md: "row" }} // xs (mobile) : colonne /md (tablette,desktop)
           size={{ xs: 6, md: 4 }}
         >
           {projects.map((project) => (

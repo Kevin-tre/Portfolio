@@ -24,7 +24,7 @@ const Header = () => {
           <CloseIcon
             fontSize="large"
             sx={{
-              color: darkMode ? "#1A1A1A" : "", // Blanc en dark mode, gris sinon
+              color: darkMode ? "#1A1A1A" : "",
               bgcolor: darkMode ? "#d7b986" : "",
             }}
           />
@@ -32,7 +32,7 @@ const Header = () => {
           <MenuIcon
             fontSize="large"
             sx={{
-              color: darkMode ? "#1A1A1A" : "", // Blanc en dark mode, gris sinon
+              color: darkMode ? "#1A1A1A" : "",
               bgcolor: darkMode ? "#d7b986" : "",
             }}
           />

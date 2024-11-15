@@ -79,11 +79,11 @@ const SwitchButton = () => {
         id="dark-mode-switch"
         checked={darkMode}
         onClick={handleClick}
-        role="switch" // Assurez-vous que le rôle "switch" est défini
-        aria-checked={darkMode} // Correspond à l'état du switch (true/false)
+        role="switch"
+        aria-checked={darkMode}
         aria-label={
           darkMode ? "Désactiver le mode sombre" : "Activer le mode sombre"
-        } // Fournir une description utile
+        }
       />
     </div>
   );
