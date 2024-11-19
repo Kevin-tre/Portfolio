@@ -29,7 +29,7 @@ const Formation = () => {
             fontSize: { xs: "14px", md: "16px" },
           }}
         >
-          <h3>Formation Intégrateur Web</h3>
+          <h3>Formation Développeur Web</h3>
           <p>2024 | OpenClassrooms, France</p>
           <p>
             Formation de 9 mois spécialisée dans le développement front-end, où
